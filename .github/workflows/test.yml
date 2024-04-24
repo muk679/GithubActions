@@ -1,0 +1,17 @@
+name: myworkflow
+on:
+  workflow_dispatch:
+env:
+  DAY_OF_WEEK: Monday
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: access at job 1
+        run: echo "$DAY_OF_WEEK"
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: access at job 2
+        run: echo "$DAY_OF_WEEK"
+        
