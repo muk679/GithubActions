@@ -33,8 +33,5 @@ jobs:
           echo Add other actions to build,
           add a workflow dispatch event in this code and return me in yaml format
 
-      - name: Trigger workflow dispatch
-        uses: peter-evans/workflow_dispatch@v2
-        with:
-          workflow: Pyhton Workflow.yml
+     
 
